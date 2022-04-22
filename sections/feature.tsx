@@ -12,7 +12,7 @@ const Feature = ({styles} : any): JSX.Element => {
     <>
       <section className="flex flex-col gap-[64px] py-[96px] px-[120px] items-center ">
         <div className=" flex flex-row h-[600px] w-full ">
-          <div className="w-6/12">
+          <div className="w-6/12 flex justify-center">
             <img src={portfolioBalance.src} alt="" />
           </div>
           <div className=" flex flex-col justify-center pl-[111px] pr-8 w-6/12 gap-6">
@@ -33,12 +33,12 @@ const Feature = ({styles} : any): JSX.Element => {
               Invest in cryptocurrency slowly over time by scheduling buys daily, weekly, or monthly.
             </p>
           </div>
-          <div className="w-6/12">
+          <div className="w-6/12 flex justify-center">
             <img src={bitcoinPrice.src} alt="" />
           </div>
         </div>
         <div className=" flex flex-row h-[600px] w-full ">
-          <div className="w-6/12">
+          <div className="w-6/12 flex justify-center">
             <img src={verifyYourIdentity.src} alt="" />
           </div>
           <div className=" flex flex-col justify-center pl-[111px] pr-8 w-6/12 gap-6">
