@@ -16,7 +16,7 @@ const Hero = ({styles}: {styles: any}): JSX.Element => {
         <div className="text-center px-[20vw]">
           {/* <h1 className=" text-[56px] text-blue-600 font-semibold ">One platform</h1>
           <h1 className=" text-[56px] text-black font-semibold ">all things Crypto</h1> */}
-          <h1 className={`text-[56px] font-semibold ${styles["title-hero"]}`}>
+          <h1 className={`text-[56px] font-bold ${styles["title-hero"]}`}>
             <div className="text-blue-600">
               One platform
             </div>

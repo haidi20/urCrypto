@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 
-// components
+// sections
 import Header from 'sections/header';
 import Hero from 'sections/hero';
 import Benefit from 'sections/benefit';
+import Feature from 'sections/feature';
 
-// styles
 // styles
 import styles from "styles/landingPage.module.scss";
 
@@ -16,6 +16,7 @@ const Index = () : JSX.Element => {
         <Header styles={styles} />
         <Hero styles={styles} />
         <Benefit styles={styles} />
+        <Feature styles={styles} />
       </div>
     </>
   )

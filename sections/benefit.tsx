@@ -3,14 +3,14 @@ import React from 'react';
 // images
 import reviewAppMobile from 'public/images/review-app-mobile.png';
 
-const Benefit = ({styles}: {styles: any}): JSX.Element => {
+const Benefit = ({styles}: any): JSX.Element => {
 
   return (
     <>
       <section className="flex flex-row w-full ">
         <div className="flex flex-col w-6/12 px-[10vw] justify-center">
           <h1 
-            className={`font-semibold text-[48px] text-black ${styles["title-benefit"]}`}>
+            className={`font-bold text-[48px] text-black ${styles["title-benefit"]}`}>
             The Most Trusted Cryptocurrency Platform
           </h1>
           <div className="flex flex-col mt-10 divide-y ">
