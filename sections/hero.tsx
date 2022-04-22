@@ -12,11 +12,11 @@ const Hero = (): JSX.Element => {
 
   return (
     <>
-      <section className=" bg-gradient-to-b from-white to-[#F8F8FC] min-h-screen pt-[2%] pb-[4%] px-[10%] flex flex-col items-center">
-        <div className="text-center px-[35%]">
+      <section className=" bg-gradient-to-b from-white to-[#F8F8FC] min-h-screen pt-[2%] pb-[6%] px-[10%] flex flex-col items-center">
+        <div className="text-center px-[20vw]">
           <h1 className=" text-[56px] text-blue-600 font-semibold ">One platform</h1>
           <h1 className=" text-[56px] text-black font-semibold ">all things Crypto</h1>
-          <p className=" my-6 ">
+          <p className=" my-6 text-gray-600 ">
             Open a free account in minutes right from your phone and make your money go further
           </p>
           <div className=" flex flex-row gap-2">
@@ -36,14 +36,14 @@ const Hero = (): JSX.Element => {
         <div className="mt-20">
           <img src={pageAdmin.src} alt="Page Admin" />
         </div>
-        <div className="flex flex-row gap-[10%] w-full justify-center mt-16">
+        <div className="flex flex-row gap-[10%] w-full justify-center mt-16 px-[10%]">
           <img src={binance.src} alt="" />
           <img src={coinbase.src} alt="" />
           <img src={bitcoin.src} alt="" />
           <img src={tether.src} alt="" />
           <img src={bitmex.src} alt="" />
         </div>
-        <div className=" mt-[4%] w-full px-[5%]">
+        <div className=" mt-[4%] w-full">
           <div className="bg-white border-2 border-gray-100 rounded-lg py-12 grid grid-cols-3 divide-x-2">
             <div className="text-center">
               <h1 className=" text-[48px] text-semibold">99K</h1>

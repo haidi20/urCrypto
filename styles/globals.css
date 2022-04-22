@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 @layer components {
-    .navbar {
-        .item-menu {
-            @apply hover:text-gray-500;
-        }
+    .item-menu {
+        @apply hover:text-blue-600 cursor-pointer;
     }
 }
 

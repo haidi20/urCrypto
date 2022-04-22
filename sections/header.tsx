@@ -15,11 +15,11 @@ const Header = (): JSX.Element => {
         <div className="">
           <img src={Logo.src} className=" " />
         </div>
-        <div className="flex flex-row gap-5 items-center">
-          <h5 className={`${styles["item-menu"]}`}>Products</h5>
-          <h5 className={`${styles["item-menu"]}`}>Price</h5>
-          <h5 className={`${styles["item-menu"]}`}>Learn</h5>
-          <h5 className={`${styles["item-menu"]}`}>Support</h5>
+        <div className="flex flex-row gap-10 items-center">
+          <h5 className={`item-menu`}>Products</h5>
+          <h5 className={`item-menu`}>Price</h5>
+          <h5 className={`item-menu`}>Learn</h5>
+          <h5 className={`item-menu`}>Support</h5>
         </div>
         <div className="flex flex-row items-center gap-4">
           <a href="">
