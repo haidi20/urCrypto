@@ -8,7 +8,7 @@ const Benefit = ({styles}: {styles: any}): JSX.Element => {
   return (
     <>
       <section className="flex flex-row w-full ">
-        <div className="flex flex-col w-6/12 px-[10vw] py-[5vh]">
+        <div className="flex flex-col w-6/12 px-[10vw] justify-center">
           <h1 
             className={`font-semibold text-[48px] text-black ${styles["title-benefit"]}`}>
             The Most Trusted Cryptocurrency Platform
