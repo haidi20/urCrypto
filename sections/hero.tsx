@@ -8,14 +8,22 @@ import bitcoin from "public/images/bitcoin.png"
 import tether from "public/images/tether.png"
 import bitmex from "public/images/bitmex.png"
 
-const Hero = (): JSX.Element => {
+const Hero = ({styles}: {styles: any}): JSX.Element => {
 
   return (
     <>
-      <section className=" bg-gradient-to-b from-white to-[#F8F8FC] min-h-screen pt-[2%] pb-[6%] px-[10%] flex flex-col items-center">
+      <section className=" bg-gradient-to-b from-white to-[#F8F8FC] min-h-screen pt-[5vh] pb-[8vh] px-[13vw] flex flex-col items-center">
         <div className="text-center px-[20vw]">
-          <h1 className=" text-[56px] text-blue-600 font-semibold ">One platform</h1>
-          <h1 className=" text-[56px] text-black font-semibold ">all things Crypto</h1>
+          {/* <h1 className=" text-[56px] text-blue-600 font-semibold ">One platform</h1>
+          <h1 className=" text-[56px] text-black font-semibold ">all things Crypto</h1> */}
+          <h1 className={`text-[56px] font-semibold ${styles["title-hero"]}`}>
+            <div className="text-blue-600">
+              One platform
+            </div>
+            <div className="text-black">
+              all things Crypto
+            </div>
+          </h1>
           <p className=" my-6 text-gray-600 ">
             Open a free account in minutes right from your phone and make your money go further
           </p>

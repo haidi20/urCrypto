@@ -4,10 +4,7 @@ import React from 'react';
 // images
 import Logo from "public/images/logo.png";
 
-// styles
-import styles from "styles/header.module.scss";
-
-const Header = (): JSX.Element => {
+const Header = ({styles}: {styles: object}): JSX.Element => {
 
   return (
     <>
