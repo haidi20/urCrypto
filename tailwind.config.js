@@ -12,6 +12,22 @@ module.exports = {
         colors: {
             ...colors,
         },
+        screens: {
+            'sm': '1024px',
+            // => @media (min-width: 640px) { ... }
+
+            'md': '1440px',
+            // => @media (min-width: 768px) { ... }
+
+            'lg': '1512px',
+            // => @media (min-width: 1024px) { ... }
+
+            'xl': '1728',
+            // => @media (min-width: 1280px) { ... }
+
+            // '2xl': '1536px',
+            // => @media (min-width: 1536px) { ... }
+        },
         extend: {
             minHeight: {
                 "screen-75": "75vh",
@@ -69,6 +85,9 @@ module.exports = {
             backgroundSize: {
                 full: "100%",
             },
+            backgroundImage: {
+                'img-testimoni1': "linear-gradient(to top bottom, rgba('#7ed56f',0.8), rgba('#28b485',0.8)), url('../public/images/testimoni1.png')",
+            },
         },
     },
     variants: [
@@ -90,47 +109,47 @@ module.exports = {
         'tailwindcss/nesting',
         'tailwindcss',
         'autoprefixer',
-        plugin(function({ addComponents, theme }) {
-            const screens = theme("screens", {});
-            addComponents([{
-                    ".container": { width: "100%" },
-                },
-                {
-                    [`@media (min-width: ${screens.sm})`]: {
-                        ".container": {
-                            "max-width": "640px",
-                        },
-                    },
-                },
-                {
-                    [`@media (min-width: ${screens.md})`]: {
-                        ".container": {
-                            "max-width": "768px",
-                        },
-                    },
-                },
-                {
-                    [`@media (min-width: ${screens.lg})`]: {
-                        ".container": {
-                            "max-width": "1024px",
-                        },
-                    },
-                },
-                {
-                    [`@media (min-width: ${screens.xl})`]: {
-                        ".container": {
-                            "max-width": "1280px",
-                        },
-                    },
-                },
-                {
-                    [`@media (min-width: ${screens["2xl"]})`]: {
-                        ".container": {
-                            "max-width": "1280px",
-                        },
-                    },
-                },
-            ]);
-        }),
+        // plugin(function({ addComponents, theme }) {
+        //     const screens = theme("screens", {});
+        //     addComponents([{
+        //             ".container": { width: "100%" },
+        //         },
+        //         {
+        //             [`@media (min-width: ${screens.sm})`]: {
+        //                 ".container": {
+        //                     "max-width": "640px",
+        //                 },
+        //             },
+        //         },
+        //         {
+        //             [`@media (min-width: ${screens.md})`]: {
+        //                 ".container": {
+        //                     "max-width": "768px",
+        //                 },
+        //             },
+        //         },
+        //         {
+        //             [`@media (min-width: ${screens.lg})`]: {
+        //                 ".container": {
+        //                     "max-width": "1024px",
+        //                 },
+        //             },
+        //         },
+        //         {
+        //             [`@media (min-width: ${screens.xl})`]: {
+        //                 ".container": {
+        //                     "max-width": "1280px",
+        //                 },
+        //             },
+        //         },
+        //         {
+        //             [`@media (min-width: ${screens["2xl"]})`]: {
+        //                 ".container": {
+        //                     "max-width": "1280px",
+        //                 },
+        //             },
+        //         },
+        //     ]);
+        // }),
     ],
 }
