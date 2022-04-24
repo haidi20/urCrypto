@@ -22,3 +22,9 @@
 .title-cta {
     line-height: 1.9ch;
 }
+
+//footer
+.menus-footer p:not(:first-child),
+.medsos-footer i {
+    cursor: pointer;
+}

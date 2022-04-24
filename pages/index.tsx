@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 
 // sections
-import Header from 'sections/header';
+import CTA from 'sections/cta';
 import Hero from 'sections/hero';
+import Header from 'sections/header';
 import Benefit from 'sections/benefit';
 import Feature from 'sections/feature';
+import Footer from 'sections/footer';
 import HowToWork from 'sections/how-to-work';
 import Testimonial from 'sections/testimonial';
-import CTA from 'sections/cta';
 
 // styles
 import styles from "styles/landingPage.module.scss";
@@ -23,6 +24,7 @@ const Index = () : JSX.Element => {
         <HowToWork styles={styles} />
         <Testimonial styles={styles} />
         <CTA styles={styles} />
+        <Footer styles={styles} />
       </div>
     </>
   )

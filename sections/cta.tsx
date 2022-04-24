@@ -31,7 +31,7 @@ const CTA = ({styles}: {styles: any}): JSX.Element => {
               Join a new generation of investors
             </h1>
             <button className="bg-white w-[169px] mt-[32px] rounded-lg py-4
-                                 hover:bg-gray-200">
+                                 hover:bg-gray-200 ">
               Get started
             </button>
           </div>
