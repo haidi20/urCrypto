@@ -11,7 +11,7 @@ const Testimonial = ({styles}: {styles: any}): JSX.Element => {
   return (
     <>
       <section className=" flex flex-col items-center text-center">
-        <h1 className="text-[48px] my-10">
+        <h1 className="text-[48px] my-10 font-bold">
           What people are saying
         </h1>
         <div className={`flex flex-row gap-4 pb-[10vh]  `}>

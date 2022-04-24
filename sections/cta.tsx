@@ -22,8 +22,8 @@ const CTA = ({styles}: {styles: any}): JSX.Element => {
         id="cta"
         className="flex justify-center py-[96px] px-[10vw]  ">
         <div 
-          className={`w-screen flex flex-row 
-                      md:py-[70px] md:px-[104px] rounded-xl
+          className={`w-screen flex flex-row  
+                      md:py-[70px] md:px-[104px] 
                       lg:py-[95px] `} 
           style={style.bgCta} >
           <div className="flex flex-col w-[30vw]">
