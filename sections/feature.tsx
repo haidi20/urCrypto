@@ -1,5 +1,4 @@
 import React from 'react';
-import { styles } from 'types/landingPage.type';
 
 // images
 import bitcoinPrice from 'public/images/bitcoin-price.png'
