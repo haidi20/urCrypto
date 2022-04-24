@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 
+// types
+import { tLandingPage } from 'types/landingPage.type';
+
 // sections
 import CTA from 'sections/cta';
 import Hero from 'sections/hero';
@@ -13,7 +16,7 @@ import Testimonial from 'sections/testimonial';
 // styles
 import styles from "styles/landingPage.module.scss";
 
-const Index = () : JSX.Element => {
+const Index: tLandingPage = () => {
   return (
     <>
       <div className="hidden sm:hidden md:block xl:block lg:block">

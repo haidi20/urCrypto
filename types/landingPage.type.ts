@@ -1,3 +1,6 @@
+export type tLandingPage = {
+  (): JSX.Element;
+}
 
 export type tSection = {
   ({styles}: {styles: any}): JSX.Element;
