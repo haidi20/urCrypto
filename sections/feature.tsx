@@ -1,11 +1,14 @@
 import React from 'react';
 
+// types
+import { tSection } from 'types/landingPage.type';
+
 // images
 import bitcoinPrice from 'public/images/bitcoin-price.png'
 import verifyYourIdentity from 'public/images/verify-your-identity.png'
 import portfolioBalance from 'public/images/portfolio-balance.png'
 
-const Feature = ({styles} : any): JSX.Element => {
+const Feature : tSection = ({styles}) => {
 
   return (
     <>

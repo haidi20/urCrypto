@@ -1,10 +1,12 @@
 import React from 'react';
-// import Image from 'next/image';
+
+// types
+import { tSection } from 'types/landingPage.type';
 
 // images
 import Logo from "public/images/logo.png";
 
-const Header = ({styles}: {styles: object}): JSX.Element => {
+const Header : tSection = ({styles}) => {
 
   return (
     <>

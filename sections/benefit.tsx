@@ -1,9 +1,12 @@
 import React from 'react';
 
+// types
+import { tSection } from 'types/landingPage.type';
+
 // images
 import reviewAppMobile from 'public/images/review-app-mobile.png';
 
-const Benefit = ({styles}: any): JSX.Element => {
+const Benefit : tSection = ({styles}) => {
 
   return (
     <>

@@ -1,12 +1,15 @@
 import React from "react";
 
+// types
+import { tSection } from "types/landingPage.type";
+
 // images
 import Testimoni1 from 'public/images/testimoni1.png'
 import Testimoni2 from 'public/images/testimoni2.png'
 import Testimoni3 from 'public/images/testimoni3.png'
 import Testimoni4 from 'public/images/testimoni4.png'
 
-const Testimonial = ({styles}: {styles: any}): JSX.Element => {
+const Testimonial : tSection = ({styles}) => {
 
   return (
     <>

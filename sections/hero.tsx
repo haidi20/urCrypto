@@ -1,5 +1,8 @@
 import React from 'react';
 
+// types
+import { tSection } from 'types/landingPage.type';
+
 // images
 import pageAdmin from "public/images/page-admin.png";
 import binance from "public/images/binance.png"
@@ -8,7 +11,7 @@ import bitcoin from "public/images/bitcoin.png"
 import tether from "public/images/tether.png"
 import bitmex from "public/images/bitmex.png"
 
-const Hero = ({styles}: {styles: any}): JSX.Element => {
+const Hero : tSection = ({styles}) => {
 
   return (
     <>

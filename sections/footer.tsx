@@ -1,9 +1,12 @@
 import React from 'react';
 
+// types
+import { tSection } from 'types/landingPage.type';
+
 // images
 import Logo from 'public/images/logo-middle.png';
 
-const Footer = ({styles}: {styles: any}): JSX.Element => {
+const Footer : tSection = ({styles}) => {
 
   return(
     <>

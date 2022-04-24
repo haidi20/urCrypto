@@ -6,14 +6,24 @@ import btc from 'public/images/btc.png';
 import eth from 'public/images/eth.png';
 import luna from 'public/images/luna.png';
 
-const CTA = ({styles}: {styles: any}): JSX.Element => {
+// types
+import { tSection, tOnScrollTop } from 'types/landingPage.type';
 
+const CTA: tSection = ({styles}) => {
   const style = {
     bgCta: {
       backgroundImage: `url(${bg.src})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     }
+  }
+
+  const onScrollToTop: tOnScrollTop = (e, message) => {
+    e.preventDefault();
+    console.log(message);
+
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
   return (
@@ -30,8 +40,10 @@ const CTA = ({styles}: {styles: any}): JSX.Element => {
             <h1 className={` text-[40px] text-white ${styles["title-cta"]} `}>
               Join a new generation of investors
             </h1>
-            <button className="bg-white w-[169px] mt-[32px] rounded-lg py-4
-                                 hover:bg-gray-200 ">
+            <button 
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => onScrollToTop(e, "message")}
+              className="bg-white w-[169px] mt-[32px] rounded-lg py-4
+                          hover:bg-gray-200 ">
               Get started
             </button>
           </div>

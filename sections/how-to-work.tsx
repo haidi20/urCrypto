@@ -1,17 +1,14 @@
 import React from 'react';
 
+// types
+import { tSection, tCard } from 'types/landingPage.type';
+
 // images
 import HowToWorkOne from "public/images/how-to-work1.png";
 import HowToWorkTwo from "public/images/how-to-work2.png";
 import HowToWorkThree from "public/images/how-to-work3.png";
 
-type tCard = {
-  image: string,
-  title: string,
-  desc: string,
-}
-
-const HowToWork = ({styles}: {styles: any}): JSX.Element => {
+const HowToWork : tSection = ({styles}) => {
 
   const Card = ({image, title, desc}: tCard): JSX.Element => (
     <div
